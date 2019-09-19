@@ -16,3 +16,9 @@ Wipe out the contents of wwwroot
 - `yarn init`
 - `yarn add vue vue-router`
 - `yarn add -dev webpack webpack-cli`
+
+#### Commit 3 - VueJS folders and entry point
+
+- Create `AppClient/Vue` folder with `components, pages` subfolders
+- Add a `AppClient/Vue/App.vue` file with Hello world.
+- Add a `AppClient/app.js` file
