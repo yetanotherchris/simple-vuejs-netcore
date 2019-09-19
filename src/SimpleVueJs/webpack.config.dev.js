@@ -1,6 +1,7 @@
 'use strict'
 
 const { VueLoaderPlugin } = require('vue-loader')
+const path = require('path');
 
 module.exports = {
   mode: 'development',
@@ -15,6 +16,10 @@ module.exports = {
       }
     ]
   },
+  output: {
+    path: path.join(__dirname, 'wwwroot/dist/'),
+    publicPath: '/dist/'
+},
   plugins: [
     new VueLoaderPlugin()
   ]

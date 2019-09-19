@@ -29,3 +29,11 @@ Wipe out the contents of wwwroot
 - Add a `webpack.config.dev.js` file.
 - Add a "build" script in package.json as a shortcut that calls webpack.
 - Run `yarn build`
+
+#### Commit 5 - update Razor Views and output webpack
+
+- `yarn add --dev path`
+- Add the output path to `webpack.config.dev.js` so webpack goes to wwwroot.
+- Update `Index.cshtml` so it just contains a `<div id=app>` and `<script>` tag.
+- Update the `_Layout_.cshtml` so it just contains a renderBody.
+- `dotnet run` and open in a browser
