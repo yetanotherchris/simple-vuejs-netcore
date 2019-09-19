@@ -22,3 +22,10 @@ Wipe out the contents of wwwroot
 - Create `AppClient/Vue` folder with `components, pages` subfolders
 - Add a `AppClient/Vue/App.vue` file with Hello world.
 - Add a `AppClient/app.js` file
+
+#### Commit 4 - webpack setup
+
+- `yarn add --dev vue-loader vue-template-compiler vue-style-loader css-loader`
+- Add a `webpack.config.dev.js` file.
+- Add a "build" script in package.json as a shortcut that calls webpack.
+- Run `yarn build`
