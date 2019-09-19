@@ -1,7 +1,9 @@
 # simple-vuejs-netcore
 The simplest of VueJS + ASP.NET Core examples: pages, router, webpack, vuex.
 
-No SpaServices.
+No SpaServices, we're not running Javascript through node via .net core.
+
+## Part 1: The easy part
 
 #### Commit 1 - dotnet core scaffolding
 - `mkdir src`
@@ -37,3 +39,7 @@ Wipe out the contents of wwwroot
 - Update `Index.cshtml` so it just contains a `<div id=app>` and `<script>` tag.
 - Update the `_Layout_.cshtml` so it just contains a renderBody.
 - `dotnet run` and open in a browser
+
+#### Commit 6 - add a yarn shortcut
+
+- Add a "dev" script to package.json that also runs `dotnet run`

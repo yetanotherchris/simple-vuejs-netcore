@@ -17,6 +17,7 @@
     "webpack-cli": "^3.3.9"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.dev.js"
+    "build": "webpack --config webpack.config.dev.js",
+    "dev": "webpack --config webpack.config.dev.js && dotnet run"
   }
 }
