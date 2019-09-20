@@ -6,7 +6,7 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   entry: [
-    './AppClient/app.js'
+    './AppClient/Vue/main.js'
   ],
   module: {
     rules: [

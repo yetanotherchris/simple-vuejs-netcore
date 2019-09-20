@@ -3,7 +3,7 @@ The simplest of VueJS + ASP.NET Core examples: pages, router, webpack, vuex.
 
 No SpaServices, we're not running Javascript through node via .net core.
 
-## Part 1: The easy part
+## Part 1: scaffolding of .NET Core, Vue, webpack
 
 #### Commit 1 - dotnet core scaffolding
 - `mkdir src`
@@ -43,3 +43,15 @@ Wipe out the contents of wwwroot
 #### Commit 6 - add a yarn shortcut
 
 - Add a "dev" script to package.json that also runs `dotnet run`
+
+## Part 2: VueJS pages and VueJS routing
+
+#### Commit 2.1 - add vue-routing and two routes
+
+To match the vuecli template, rename app.js to main.js and move it into the AppClient/Vue folder.
+
+- `yarn add vue-router`
+- Add a `AppClient/Vue/router.js` file, add the `vue-router` import and two routes to it.
+- Update `main.js` to import the `router.js` file, and add it to the `new Vue()..` section.
+- Update `AppClient/Vue/App.vue` to have a `<router-view />` in the template and some links.
+- Add `Index.vue` and `Time.vue` to `pages/` as empty templates.
